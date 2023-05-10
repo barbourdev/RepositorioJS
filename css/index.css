@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+.header{
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    z-index: 1000;
+}
+
+.header img{
+    float: left;
+    justify-content: left;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    color: #ffffff;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.header .navbar a:hover{
+    letter-spacing: 0.1rem;
+    background: #00FFFF;
+    color: #000;
+    padding: 0.7rem;
+    border-radius: .4rem;
+    transition: 0.4s;
+}
+
+.home{
+    min-height: 100vh; /* a section home, já comça com 100 de altura, ou seja cobrindo 100% da tela do computador, automaticamente ao colocar justify content center ou aligncenter o titulo ficara ao centro da pagina*/
+    display: flex;
+    align-items: center;
+    background: url(../img/background.png) no-repeat;
+    background-size: cover;
+}
+
+.home .content{
+    max-width: 60rem;
+    margin-left: 1rem;
+}
+
+.titulo{
+    font-size: 4rem;
+    color: #fff;
+}
+
+.home .content a{
+    font-size: 4rem;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;   
+}
+
+.home .content a:hover{
+    background: #00FFFF;
+    color: #000;
+    letter-spacing: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.8rem;
+    transition: 1s;
+}
+
+.home .content p{
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.5;
+    max-width: 70rem;
+    margin: 2rem 0;
+    color: #00FFFF;
+    font-family:'Source Code Pro', monospace;
+    text-transform: none;
+}
+
+#container{
+    display: flex;
+    width: 70%;
+    margin: 0 auto; 
+}
+
+#container .about{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home #container .about img{
+    height: 8rem;
+    border-style: solid;
+    border-color: #00FFFF;
+    border-radius: 50%;
+}
+
+.home #container .about a{
+    display: flex;
+    font-size: 1.5rem;
+    max-width: 50rem;
+    margin: 2rem 0;
+    font-family:'Source Code Pro', monospace;
+    color: #FFFF;
+    border-radius: 0.8rem;
+}
+
+.home #container .about a:hover{
+    background: #00FFFF;
+    letter-spacing: 0.2rem;
+    padding: 0.3rem;
+    color: #000;
+    transition: 1s;
+    cursor: pointer;
+}

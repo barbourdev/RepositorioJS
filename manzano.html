@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/manzano.css">
+    <title>Repositório Barbour - Manzano</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#header" class="logo">
+            <img src="img/Frame 1.png" alt="">
+        </a>
+
+        <div class="navbar">
+            <a href="index.html">voltar</a>
+            <a href="faccat.html">atividades faccat</a>
+            <a href="https://www.linkedin.com/in/felipe-barbour-0410b0268/" target="_blank" rel="noopener noreferrer">linkedin</a>
+            <a href="https://github.com/barbourdev" target="_blank" rel="noopener noreferrer">gitHub</a>
+        </div>
+    </header>
+
+    <section class="home">
+        <h1 class="title">Exercicios da Apostila Manzano</h1>
+        <div class="listaExercicio">
+           <ul class="exercicios">
+
+            <!-- Exercicio 1: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 1 - Conversor de Celsius para Fahrenheit</span>
+                    </div>
+                    <div class="a">
+                        <p>Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de conversão é F = (9 * C + 160) / 5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.</p>
+                        <h3>Digite a temperaura em Celsius</h3>
+                        <input type="number" name="temperatura1" id="temperatura1">
+
+                        <button class="exerciciosBotoes" onclick="receberDados1()" id="receberDados1">Calcular</button>
+                        <button class="exerciciosBotoes" onclick="limpar1()" id="limpar1">Limpar</button>
+                        
+                        <h3 id="titulo1">Resultado: </h3>
+                        <p class="resultado" id="resultado1"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 2: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 2 - Conversor de Fahrenheit para Celsius</span>
+                    </div>
+                    <div class="a">
+                        <p>Ler uma temperatura em graus Fahrenheit e apresentá-la convertida em graus Celsius. A fórmula de conversão é C = (F - 32) * (5/9) , sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.</p>
+                        <h3>Digite a temperaura em Fahrenheit</h3>
+                        <input type="number" name="temperatura2" id="temperatura2">
+
+                        <button class="exerciciosBotoes" onclick="receberDados2()" id="receberDados2">Calcular</button>
+                        <button class="exerciciosBotoes" onclick="limpar2()" id="limpar2">Limpar</button>
+
+                        <h3 id="titulo2">Resultado: </h3>
+                        <p class="resultado" id="resultado2"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 3: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 3 - Volume</span>
+                    </div>
+                    <div class="a">
+                        <p>Calcular e apresentar o valor do volume de uma lata de óleo, utilizando a fórmula: Volume←PI *Raio2 * Altura</p>
+                        <h3>Digite a Altura da lata</h3>
+                        <input type="text" name="digite_altura" id="digite_altura" onkeyup="receberDados3()">
+                        <h3>Digite o Raio da lata</h3>
+                        <input type="text" name="digite_raio" id="digite_raio" onkeyup="receberDados3()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="resultado3"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 4: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 4 - Quantidade de litros na viagem</span>
+                    </div>
+                    <div class="a">
+                        <p>Efetuar o cálculo da quantidade de litros de combustível gasta em uma viagem, utilizando um automóvel que faz 12 Km por litro. Para obter o cálculo, o usuário deve fornecer o tempo gasto (TEMPO) e a velocidade média (VELOCIDADE) durante a viagem. Desta forma, será possível obter a distância percorrida com a fórmula DISTANCIA = TEMPO * VELOCIDADE. Possuindo o valor da distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula LITROS_USADOS = DISTANCIA / 12. Ao final, o programa deve apresentar os valores da velocidade média (VELOCIDADE), tempo gasto na viagem (TEMPO), a distancia percorrida (DISTANCIA) e a quantidade de litros (LITROS_USADOS) utilizada na viagem.</p>
+                        <h3>Digite as horas gastas na viagem: </h3>
+                        <input type="text" name="digite_horas" id="digite_horas" onkeyup="receberDados4()">
+                        <h3>Digite os minutos restantes da viagem: </h3>
+                        <input type="text" name="digite_minutos" id="digite_minutos" onkeyup="receberDados4()">
+                        <h3>Digite a velocidade média da viagem: </h3>
+                        <input type="text" name="digite_velocidade" id="digite_velocidade" onkeyup="receberDados4()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="resultado4"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 5: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 5 - Prestação em Atraso</span>
+                    </div>
+                    <div class="a">
+                        <p>Efetuar o cálculo e a apresentação do valor de uma prestação em atraso, utilizando a fórmula PRESTACAO = VALOR + (VALOR * TAXA/100) * TEMPO.</p>
+                        <h3>Digite o valor da prestação: </h3>
+                        <input type="text" name="digite_valorPrestação" id="digite_valorPrestação" onkeyup="receberDados5()">
+                        <h3>Digite o tempo em meses: </h3>
+                        <input type="text" name="digite_meses" id="digite_meses" onkeyup="receberDados5()">
+                        <h3>Digite os dias restantes: </h3>
+                        <input type="text" name="digite_dias" id="digite_dias" onkeyup="receberDados5()">
+                        <h3>Digite a taxa em porcentagem da prestação</h3>
+                        <input type="text" name="digite_taxa" id="digite_taxa" onkeyup="receberDados5()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="resultado5"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 6: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 6 - Troca de Valores</span>
+                    </div>
+                    <div class="a">
+                        <p>Ler dois valores (inteiros, reais ou caracteres) para as variáveis A e B, e efetuar a troca dos valores de forma que a variável A passe a possuir o valor da variável B e a variável B passe a possuir o valor da variável A. Apresentar os valores trocados</p>
+                        <h3>Digite um valor: </h3>
+                        <input type="text" name="digite_valor1" id="digite_valor1" onkeyup="receberDados6()">
+                        <h3>Digite outro valor: </h3>
+                        <input type="text" name="digite_valor2" id="digite_valor2" onkeyup="receberDados6()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio6"></p>
+                        <p class="resultado" id="resultado6"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 7: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 7 - Distributiva</span>
+                    </div>
+                    <div class="a">
+                        <p>Ler quatro números inteiros e apresentar o resultado da adição e multiplicação, baseando-se na utilização do conceito da propriedade distributiva. Ou seja, se forem lidas as variáveis A, B, C, e D, devem ser somadas e multiplicadas A com B, A com C e A com D. Depois B com C, B com D e por fim C com D. Perceba que será necessário efetuar seis operações de adição e seis operações de multiplicação e apresentar doze resultados de saída.</p>
+                        <h3>Digite o 1° valor: </h3>
+                        <input type="text" name="exercicio7" id="exercicio7_valor1" onkeyup="receberDados7()">
+                        <h3>Digite o 2° valor: </h3>
+                        <input type="text" name="exercicio7" id="exercicio7_valor2" onkeyup="receberDados7()">
+                        <h3>Digite o 3° valor: </h3>
+                        <input type="text" name="exercicio7" id="exercicio7_valor3" onkeyup="receberDados7()">
+                        <h3>Digite o 4° valor: </h3>
+                        <input type="text" name="exercicio7" id="exercicio7_valor4" onkeyup="receberDados7()">
+                        <h3>Resultados das multiplicações: </h3>
+                        <p class="resultado" id="mult1"></p>
+                        <p class="resultado" id="mult2"></p>
+                        <p class="resultado" id="mult3"></p>
+                        <p class="resultado" id="mult4"></p>
+                        <p class="resultado" id="mult5"></p>
+                        <p class="resultado" id="mult6"></p>
+                        <h3>Resultados das adições: </h3>
+                        <p class="resultado" id="add1"></p>
+                        <p class="resultado" id="add2"></p>
+                        <p class="resultado" id="add3"></p>
+                        <p class="resultado" id="add4"></p>
+                        <p class="resultado" id="add5"></p>
+                        <p class="resultado" id="add6"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 8: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 8 - Volume de uma caixa</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que calcule e apresente o volume de uma caixa retangular, por meio da fórmula VOLUME = COMPRIMENTO * LARGURA * ALTURA.</p>
+                        <h3>Digite o comprimento da caixa: </h3>
+                        <input type="text" name="exercicio8" id="exercicio8_comprimento" onkeyup="receberDados8()">
+                        <h3>Digite a largura da caixa: </h3>
+                        <input type="text" name="exercicio8" id="exercicio8_largura" onkeyup="receberDados8()">
+                        <h3>Digite a altura da caixa: </h3>
+                        <input type="text" name="exercicio8" id="exercicio8_altura" onkeyup="receberDados8()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio8_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 9: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 9 - Quadrado da Diferença</span>
+                    </div>
+                    <div class="a">
+                        <p>Ler dois inteiros (variáveis A e B) e imprimir o resultado do quadrado da diferença do primeiro valor pelo segundo.</p>
+                        <h3>Digite um valor: </h3>
+                        <input type="text" name="exercicio9" id="exercicio9_valor1" onkeyup="receberDados9()">
+                        <h3>Digite outro valor: </h3>
+                        <input type="text" name="exercicio9" id="exercicio9_valor2" onkeyup="receberDados9()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio9_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 10: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 10 - Conversor de Dólar para Real</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a apresentação do valor da conversão em real de um valor lido em dólar. O programa deve solicitar o valor da cotação do dólar e também a quantidade de dólares disponível com o usuário, para que seja apresentado o valor em moeda brasileira.</p>
+                        <h3>Digite a quantidade de dólares disponível: </h3>
+                        <input type="text" name="exercicio10" id="exercicio10_dolar" onkeyup="receberDados10()">
+                        <h3>Digite a cotação do dólar: </h3>
+                        <input type="text" name="exercicio10" id="exercicio10_cotacao" onkeyup="receberDados10()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio10_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 11: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 11 - Conversor de Real para Dólar</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a apresentação do valor da conversão em dólar de um valor lido em real. O programa deve solicitar o valor da cotação do dólar e também a quantidade de reais disponível com o usuário, para que seja apresentado o valor em moeda americana..</p>
+                        <h3>Digite a quantidade de reais disponível: </h3>
+                        <input type="text" name="exercicio11" id="exercicio11_real" onkeyup="receberDados11()">
+                        <h3>Digite a cotação do Dólar: </h3>
+                        <input type="text" name="exercicio11" id="exercicio11_cotacao" onkeyup="receberDados11()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio11_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 12: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 12 - Soma dos quadrados</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura de três valores (A, B e C) e apresente como resultado final à soma dos quadrados dos três valores lidos.</p>
+                        <h3>Digite o 1° Valor </h3>
+                        <input type="text" name="exercicio12" id="exercicio12_valor1" onkeyup="receberDados12()">
+                        <h3>Digite o 2° valor: </h3>
+                        <input type="text" name="exercicio12" id="exercicio12_valor2" onkeyup="receberDados12()">
+                        <h3>Digite o 3° valor: </h3>
+                        <input type="text" name="exercicio12" id="exercicio12_valor3" onkeyup="receberDados12()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio12_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 13: -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 13 - Quadrado da soma</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura de três valores (A,B e C) e apresente como resultado final o quadrado da soma dos três valores lidos.</p>
+                        <h3>Digite o 1° Valor </h3>
+                        <input type="text" name="exercicio13" id="exercicio13_valor1" onkeyup="receberDados13()">
+                        <h3>Digite o 2° valor: </h3>
+                        <input type="text" name="exercicio13" id="exercicio13_valor2" onkeyup="receberDados13()">
+                        <h3>Digite o 3° valor: </h3>
+                        <input type="text" name="exercicio13" id="exercicio13_valor3" onkeyup="receberDados13()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio13_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 14 (extra) -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 14 (extra) - Produto e Soma</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa de computador que efetue a leitura de quatro valores inteiros (variáveis A, B, C e D). Ao final o programa deve apresentar o resultado do produto (variável P) do primeiro com o terceiro valor, e o resultado do produto (variável P) do primeiro com o terceiro valor, e o resultado da soma (variável S) do segundo com o quarto valor.</p>
+                        <h3>Digite o 1° Valor </h3>
+                        <input type="text" name="exercicio14" id="exercicio14_valor1" onkeyup="receberDados14()">
+                        <h3>Digite o 2° valor: </h3>
+                        <input type="text" name="exercicio14" id="exercicio14_valor2" onkeyup="receberDados14()">
+                        <h3>Digite o 3° valor: </h3>
+                        <input type="text" name="exercicio14" id="exercicio14_valor3" onkeyup="receberDados14()">
+                        <h3>Digite o 4° valor: </h3>
+                        <input type="text" name="exercicio14" id="exercicio14_valor4" onkeyup="receberDados14()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio14_resultado1"></p>
+                        <p class="resultado" id="exercicio14_resultado2"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 15 (extra) -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 15 (extra) - Salário Novo</span>
+                    </div>
+                    <div class="a">
+                        <p>Ler o valor correspondente ao salário mensal (variável SM) de um trabalhador e também o valor do percentual de reajuste (variável PR) a ser atribuído. Apresentar o valor do novo salário (variável NS)..</p>
+                        <h3>Digite o valor mensal do salário: </h3>
+                        <input type="text" name="exercicio15" id="exercicio15_salario" onkeyup="receberDados15()">
+                        <h3>Digite o porcentual que deseja acrescentar: </h3>
+                        <input type="text" name="exercicio15" id="exercicio15_porcentual" onkeyup="receberDados15()">
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio15_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 16 (extra) -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 16 (extra) - Porcentual de Votos</span>
+                    </div>
+                    <div class="a">
+                        <p>Em uma eleição sindical concorreram ao cargo de presidente três candidatos (A, B e C). Durante a apuração dos votos foram computados votos nulos e votos em branco, além dos votos válidos para cada candidato. Deve ser criado um programa de computador que efetue a leitura da quantidade de votos válidos para cada candidato, além de efetuar também a leitura da quantidade de votos nulos e votos em branco. Ao final o programa deve apresentar o número total de eleitores, considerando votos válidos, nulos e em branco; o percentual correspondente de votos válidos em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato A em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato B em relação à quantidade de eleitores; o percentual correspondente de votos válidos do candidato C em relação à quantidade de eleitores; o percentual correspondente de votos nulos em relação à quantidade de eleitores; e por último o percentual correspondente de votos em branco em relação à quantidade de eleitores.</p>
+                        
+                        <h3>Digite os votos do canditado A: </h3>
+                        Válidos: <input type="text" name="exercicio16" id="exercicio16_aValidos" onkeyup="receberDados16()" placeholder=" Votos Válidos"> <br>
+                        Brancos: <input type="text" name="exercicio16" id="exercicio16_aBrancos" onkeyup="receberDados16()" placeholder=" Votos Brancos"> <br>
+                        Nulos: <input type="text" name="exercicio16" id="exercicio16_aNulos" onkeyup="receberDados16()" placeholder=" Votos Nulos">
+                        
+                        <h3>Digite os votos do canditado B: </h3>
+                        Válidos: <input type="text" name="exercicio16" id="exercicio16_bValidos" onkeyup="receberDados16()" placeholder=" Votos Válidos"> <br>
+                        Brancos: <input type="text" name="exercicio16" id="exercicio16_bBrancos" onkeyup="receberDados16()" placeholder=" Votos Brancos"> <br>
+                        Nulos: <input type="text" name="exercicio16" id="exercicio16_bNulos" onkeyup="receberDados16()" placeholder=" Votos Nulos">
+
+                        <h3>Digite os votos do canditado C: </h3>
+                        Válidos: <input type="text" name="exercicio16"  id="exercicio16_cValidos" onkeyup="receberDados16()" placeholder=" Votos Válidos"> <br>
+                        Brancos: <input type="text" name="exercicio16" id="exercicio16_cBrancos" onkeyup="receberDados16()" placeholder=" Votos Brancos"> <br>
+                        Nulos: <input type="text" name="exercicio16" id="exercicio16_cNulos" onkeyup="receberDados16()" placeholder=" Votos Nulos">
+
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio16_totalEleitores"></p>
+                        <p class="resultado" id="exercicio16_totalValidos"></p>
+                        <p class="resultado" id="exercicio16_totalBrancos"></p>
+                        <p class="resultado" id="exercicio16_totalNulos"></p>
+                        <p class="resultado" id="exercicio16_totalValidosA"></p>
+                        <p class="resultado" id="exercicio16_totalValidosB"></p>
+                        <p class="resultado" id="exercicio16_totalValidosC"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 17 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 17 - Difrença do maior</span>
+                    </div>
+                    <div class="a">
+                        <p>Ler dois valores numéricos inteiros e apresentar o resultado da diferença do maior pelo menor valor.</p>
+
+                        <h3>Digite o 1° número: </h3>
+                        <input type="text" name="exercicio17" id="exercicio17_diferenca1">
+
+                        <h3>Digite o 2° número: </h3>
+                        <input type="text" name="exercicio17" id="exercicio17_diferenca2">
+                        <button class="exerciciosBotoes" onclick="receberDados17()">calcular</button>
+
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio17_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 18 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 18 - Módulo de um número</span>
+                    </div>
+                    <div class="a">
+                        <p>Efetuar a leitura de um valor inteiro positivo ou negativo e apresentar o número lido como sendo um valor positivo, ou seja, o programa deverá apresentar o módulo de um número fornecido. Lembre-se de verificar se o número fornecido é menor que zero; sendo, multiplique-o por -1.</p>
+
+                        <h3>Digite o 1° número: </h3>
+                        <input type="text" name="exercicio18" id="exercicio18_valor" onkeypress="SomenteNumero()" onkeyup="receberDados18()">
+
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio18_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 19 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 19 - Média Escolar</span>
+                    </div>
+                    <div class="a">
+                        <p>Ler quatro valores referentes a quatro notas escolares de um aluno e imprimir uma mensagem dizendo que o aluno foi aprovado, se o valor da média escolar for maior ou igual a 5. Se o aluno não foi aprovado, indicar uma mensagem informando esta condição. Apresentar junto das mensagens o valor da média do aluno para qualquer condição.</p>
+
+                        <h3>Digite a 1° nota: </h3>
+                        <input type="text" name="exercicio19" id="exercicio19_nota1" onkeypress="SomenteNumero()"
+                        onkeyup="limparDados19()">
+
+                        <h3>Digite a 2° nota: </h3>
+                        <input type="text" name="exercicio19" id="exercicio19_nota2" onkeypress="SomenteNumero()" onkeyup="limparDados19()">
+
+                        <h3>Digite a 3° nota: </h3>
+                        <input type="text" name="exercicio19" id="exercicio19_nota3" onkeypress="SomenteNumero()" onkeyup="limparDados19()">
+
+                        <h3>Digite a 4° nota: </h3>
+                        <input type="text" name="exercicio19" id="exercicio19_nota4" onkeypress="SomenteNumero()" onkeyup="limparDados19()">
+                        <button class="exerciciosBotoes" onclick="receberDados19()">Calcular</button>
+
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio19_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 20 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 20 - Média Escolar com Exame</span>
+                    </div>
+                    <div class="a">
+                        <p>Ler quatro valores referentes a quatro notas escolares de um aluno e imprimir uma mensagem dizendo que o aluno foi aprovado, se o valor da média escolar for maior ou igual a 7. Se o valor da média for menor que 7, solicitar a nota de exame, somar com o valor da média e obter nova média. Se a nova média for maior ou igual a 5, apresentar uma mensagem dizendo que o aluno foi aprovado em exame. Se o aluno não foi aprovado, indicar uma mensagem informando esta condição. Apresentar com as mensagens o valor da média do aluno, para qualquer condição.</p>
+
+                        <h3>Digite a 1° nota: </h3>
+                        <input type="text" name="exercicio20" id="exercicio20_nota1" onkeypress="SomenteNumero()"
+                        onkeyup="limparDados20()">
+
+                        <h3>Digite a 2° nota: </h3>
+                        <input type="text" name="exercicio20" id="exercicio20_nota2" onkeypress="SomenteNumero()" onkeyup="limparDados20()">
+
+                        <h3>Digite a 3° nota: </h3>
+                        <input type="text" name="exercicio20" id="exercicio20_nota3" onkeypress="SomenteNumero()" onkeyup="limparDados20()">
+
+                        <h3>Digite a 4° nota: </h3>
+                        <input type="text" name="exercicio20" id="exercicio20_nota4" onkeypress="SomenteNumero()" onkeyup="limparDados20()">
+                        <button class="exerciciosBotoes" id="exercicio20On" onclick="receberDados20()">Calcular</button>
+
+                        
+
+                        <h3 id="tituloExame">O aluno ficou de recuperação, digite a nota do exame:  </h3>
+                        <input type="text" name="exercicio20_exame" id="exercicio20_exame" onkeyup="receberDados20()">
+                        <button class="exerciciosBotoes" id="calcularExame" onclick="calcularExame20()">Calcular</button>
+                        <button class='exerciciosBotoes' id="exercicio20Limpar" onclick="limparElementos20()">Limpar</button>
+        
+                        <h3>Resultado: </h3>
+                        <p class="resultado" id="exercicio20_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 21 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 21 - Equação de 2° Grau</span>
+                    </div>
+                    <div class="a">
+                        <p>Efetuar a leitura de três valores (variáveis A, B e   C) e efetuar o cálculo da equação completa de segundo grau, apresentando as duas raízes, se para os valores informados for possível efetuar o referido cálculo. Lembre-se de que a variável A deve ser diferente de zero.</p>
+
+                        <h3>Digite o 1° valor: </h3>
+                        <input type="text" name="exercicio21" id="exercicio21_valor1" onkeypress="SomenteNumero()"
+                        onkeyup="limparDados21()">
+
+                        <h3>Digite o 2° valor: </h3>
+                        <input type="text" name="exercicio21" id="exercicio21_valor2" onkeypress="SomenteNumero()" onkeyup="limparDados21()">
+
+                        <h3>Digite o 3° valor: </h3>
+                        <input type="text" name="exercicio21" id="exercicio21_valor3" onkeypress="SomenteNumero()" onkeyup="limparDados21()">
+
+                        <button class="exerciciosBotoes" id="exercicio21" onclick="receberDados21()">Calcular</button>
+
+                        
+                        <button class='exerciciosBotoes' id="exercicio21Limpar" onclick="limparTudo21()">Limpar</button>
+        
+                        <h3 class="resultados">Resultado: </h3>
+                        <p class="resultado" id="exercicio21_resultado1"></p>
+                        <p class="resultado" id="exercicio21_resultado2"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 22 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 22 - Ordem Crescente</span>
+                    </div>
+                    <div class="a">
+                        <p>Efetuar a leitura de três valores (variáveis A, B e C) e apresentá-los dispostos em ordem crescente.</p>
+
+                        <h3>Digite o 1° valor: </h3>
+                        <input type="text" name="exercicio22" id="exercicio22_valor1" onkeypress="SomenteNumero()"
+                        onkeyup="limparDados22()">
+
+                        <h3>Digite o 2° valor: </h3>
+                        <input type="text" name="exercicio22" id="exercicio22_valor2" onkeypress="SomenteNumero()" onkeyup="limparDados22()">
+
+                        <h3>Digite o 3° valor: </h3>
+                        <input type="text" name="exercicio22" id="exercicio22_valor3" onkeypress="SomenteNumero()" onkeyup="limparDados22()">
+
+                        <button class="exerciciosBotoes" id="exercicio22" onclick="receberDados22()">Calcular</button>
+
+                        
+                        <button class='exerciciosBotoes' id="exercicio22Limpar" onclick="limparTudo22()">Limpar</button>
+        
+                        <h3 class="resultados">Resultado: </h3>
+                        <p class="resultado" id="exercicio22_resultado"></p>
+                    
+                    </div>
+                </li>
+
+                <!-- Exercicio 23 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 23 - Diviseis por 2 e 3</span>
+                    </div>
+                    <div class="a">
+                        <p>Efetuar a leitura de quatro números inteiros e apresentar os números que são divisíveis por 2 e 3.</p>
+
+                        <h3>Digite o 1° valor: </h3>
+                        <input type="text" name="exercicio23" id="exercicio23_valor1" onkeypress="SomenteNumero()"
+                        onkeyup="limparDados23()">
+
+                        <h3>Digite o 2° valor: </h3>
+                        <input type="text" name="exercicio23" id="exercicio23_valor2" onkeypress="SomenteNumero()" onkeyup="limparDados23()">
+
+                        <h3>Digite o 3° valor: </h3>
+                        <input type="text" name="exercicio23" id="exercicio23_valor3" onkeypress="SomenteNumero()" onkeyup="limparDados23()">
+
+                        <h3>Digite o 4° valor: </h3>
+                        <input type="text" name="exercicio23" id="exercicio23_valor4" onkeypress="SomenteNumero()" onkeyup="limparDados23()">
+
+                        <button class="exerciciosBotoes" id="exercicio23" onclick="receberDados23()">Calcular</button>
+
+                        
+                        <button class='exerciciosBotoes' id="exercicio23Limpar" onclick="limparTudo23()">Limpar</button>
+        
+                        <h3 class="resultados" id="exercicio23Invisivel1">Números divisíveis por 2 são: </h3>
+                        <p class="resultado" id="exercicio23_resultado2"></p>
+                        <h3 class="resultados" id="exercicio23Invisivel2">Números divisíveis por 3 são: </h3>
+                        <p class="resultado" id="exercicio23_resultado3"></p>
+                    
+                    </div>
+                </li>
+
+                <!-- Exercicio 24 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 24 - Maior e Menor número</span>
+                    </div>
+                    <div class="a">
+                        <p>Efetuar a leitura de cinco números inteiros e identificar o maior e o menor valores.</p>
+
+                        <h3>Digite o 1° valor: </h3>
+                        <input type="text" name="exercicio24" id="exercicio24_valor1" onkeypress="SomenteNumero()"
+                        onkeyup="limparDados24()">
+
+                        <h3>Digite o 2° valor: </h3>
+                        <input type="text" name="exercicio24" id="exercicio24_valor2" onkeypress="SomenteNumero()" onkeyup="limparDados24()">
+
+                        <h3>Digite o 3° valor: </h3>
+                        <input type="text" name="exercicio24" id="exercicio24_valor3" onkeypress="SomenteNumero()" onkeyup="limparDados24()">
+
+                        <h3>Digite o 4° valor: </h3>
+                        <input type="text" name="exercicio24" id="exercicio24_valor4" onkeypress="SomenteNumero()" onkeyup="limparDados24()">
+
+                        <h3>Digite o 5° valor: </h3>
+                        <input type="text" name="exercicio24" id="exercicio24_valor5" onkeypress="SomenteNumero()" onkeyup="limparDados24()">
+
+                        <button class="exerciciosBotoes" onclick="receberDados24()">Calcular</button>
+
+                        <button class='exerciciosBotoes' onclick="limparTudo24()">Limpar</button>
+        
+                        <h3 class="resultados">Resultado: </h3>
+                        <p class="resultado" id="exercicio24_resultado"></p>
+                    
+                    </div>
+                </li>
+
+                <!-- Exercicio 25 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 25 - Número Par ou Ímpar</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura de um número inteiro e apresentar uma mensagem informando se o número é par ou ímpar.</p>
+
+                        <h3>Digite o valor: </h3>
+                        <input type="text" name="exercicio25" id="exercicio25_valor" onkeypress="SomenteNumero()"
+                        onkeyup="limparDados25()">
+
+                        <button class="exerciciosBotoes" onclick="receberDados25()">Calcular</button>
+
+                        <button class='exerciciosBotoes' onclick="limparTudo25()">Limpar</button>
+        
+                        <h3 id="titulo25">Resultado: </h3>
+                        <p class="resultado" id="exercicio25_resultado"></p>
+                    
+                    </div>
+                </li>
+
+                <!-- Exercicio 26 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 26 - Faixa Permitida</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura de um valor que esteja entre a faixa de 1 a 9. Após a leitura do valor fornecido pelo usuário, o programa deverá indicar uma de duas mensagens: "O valor está na faixa permitida", caso o usuário forneça o valor nesta faixa, ou a mensagem "O valor está fora da faixa permitida", caso o usuário forneça valores menores que 1 ou maiores que 9.</p>
+
+                        <h3>Digite o valor: </h3>
+                        <input type="text" name="exercicio26" id="exercicio26_valor" onkeypress="SomenteNumero()"
+                        onkeyup="limparDados26()">
+
+                        <button class="exerciciosBotoes" onclick="receberDados26()">Calcular</button>
+
+                        <button class='exerciciosBotoes' onclick="limparTudo26()">Limpar</button>
+        
+                        <h3 id="titulo26">Resultado: </h3>
+                        <p class="resultado" id="exercicio26_resultado"></p>
+                    
+                    </div>
+                </li>
+
+                <!-- Exercicio 27 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 27 - Menor que 3</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura de um determinado valor inteiro, e efetue a sua apresentação, caso o valor não seja maior que três.</p>
+
+                        <h3>Digite o valor: </h3>
+                        <input type="text" name="exercicio27" id="exercicio27_valor" onkeypress="SomenteNumero()"
+                        onkeyup="limparDados27()">
+
+                        <button class="exerciciosBotoes" onclick="receberDados27()">Calcular</button>
+
+                        <button class='exerciciosBotoes' onclick="limparTudo27()">Limpar</button>
+        
+                        <h3 id="titulo27">Resultado: </h3>
+                        <p class="resultado" id="exercicio27_resultado"></p>
+                    
+                    </div>
+                </li>
+
+                <!-- Exercicio 28 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 28 - Senhor ou Senhora?</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura do nome e do sexo de uma pessoa, apresentando com saída uma das seguintes mensagens: "Ilmo Sr.", se o sexo informado como masculino, ou a mensagem "Ilma Sra.", para o sexo informado como feminino. Apresente também junto da mensagem de saudação o nome previamente informado.</p>
+
+                        <h3>Digite o seu nome: </h3>
+                        <input type="text" name="exercicio28" id="exercicio28_nome"
+                        onkeyup="limparDados28()" placeholder=" Seu nome">
+
+                        <h3>Digite o seu sexo: </h3>
+                        <input type="text" name="exercicio28" id="exercicio28_sexo"
+                        onkeyup="limparDados28()" placeholder=" M / F">
+
+                        <button class="exerciciosBotoes" onclick="receberDados28()">Enviar</button>
+
+                        <button class='exerciciosBotoes' onclick="limparTudo28()">Limpar</button>
+        
+                        <h3 id="titulo28">Resultado: </h3>
+                        <p class="resultado" id="exercicio28_resultado"></p>
+                    
+                    </div>
+                </li>
+
+                <!-- Exercicio 29 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 29 - Tabuada de 1 até 10</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar os resultados de uma tabuada de multiplicar (de 1 até 10) de um número qualquer.</p>
+                        <h3>Digite um número e clique em 'calcular' para descobrir a tabuada dele: </h3>
+                       
+                        <input type="text" name="exercicio29" id="exercicio29_tabuada" onkeypress="SomenteNumero()" onkeyup="limparDados29()">
+                        <button class="exerciciosBotoes" onclick="receberDados29()">Calcular</button>
+    
+                        <h3 id="titulo29">Resultado: </h3>
+                        <p class="resultado" id="exercicio29_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 30 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 30 - Soma de 1 a 100</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar o total da soma obtida dos cem primeiros números inteiros (1+2+3+4+...+98+99+100).</p>
+                        
+                        <button id="exercicio30Botao" class="exerciciosBotoes" onclick="receberDados30()">Calcular</button>
+    
+                        <h3 id="titulo30">Resultado: </h3>
+                        <p class="resultado" id="exercicio30_resultado"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 31 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 31 - Soma dos pares de 1 a 500</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente no final o somatório dos valores pares existentes na faixa de 1 até 500.</p>
+                        
+                        <button id="exercicio31Botao" class="exerciciosBotoes" onclick="receberDados31()">Calcular</button>
+    
+                        <h3 id="titulo31">Resultado: </h3>
+                        <p class="resultado" id="exercicio31_resultado"></p>
+                        
+                    </div>
+                </li>
+
+                <!-- Exercicio 32 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 32 - Ímpares de 0 a 20</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar todos os valores numéricos inteiros ímpares situados na faixa de 0 a 20. Para verificar se o número é ímpar, efetuar dentro da malha a verificação lógica desta  se, perguntando se o número é ímpar; sendo, mostre-o; não sendo, passe para o próximo passo.</p>
+                        
+                        <button id="exercicio32Botao" class="exerciciosBotoes" onclick="receberDados32()">Calcular</button>
+    
+                        <h3 id="titulo32">Resultado: </h3>
+                        <p class="resultado" id="exercicio32_resultado">Os valores ímpares de 0 a 20, são: </p>
+                        <p class="resultado" id="exercicio32_resultado2"></p>
+                    </div>
+                </li>
+
+                <!-- Exercicio 33 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 33 - Expoentes</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15. Deve ser considerado que qualquer número elevado a zero é 1, e elevado a 1 é ele próprio. Observe que neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^).</p>
+                        
+                        <button id="exercicio33Botao" class="exerciciosBotoes" onclick="receberDados33()">Calcular</button>
+    
+                        <h3 id="titulo33">Resultado: </h3>
+                        <p class="resultado" id="exercicio33_resultado">Os resutlados das potências de 3, variando o expoente de 0 a 15 é: </p><br>
+                        <p class="resultado" id="exercicio33_resultado2"></p>
+                       
+                    </div>
+                </li>
+
+                <!-- Exercicio 34 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 34 - Potência</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente como resultado o valor de uma potência de uma base qualquer elevada a um expoente qualquer, ou seja, de BE, em que B é o valor da base e E o valor do expoente. Observe que neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^).</p>
+
+                        <h3>Digite a base: </h3>
+                        <input type="text" name="exercicio34" id="exercicio34_base" onkeypress="SomenteNumero()" onkeyup="limparDados34()">
+                        <h3>Digite o expoente: </h3>
+                        <input type="text" name="exercicio34" id="exercicio34_expoente" onkeypress="SomenteNumero()" onkeyup="limparDados34()">
+                        <button id="exercicio34Botao" class="exerciciosBotoes" onclick="receberDados34()">Calcular</button>
+                        <button id="exercicio34Botao" class="exerciciosBotoes" onclick="limparTudo34()">Limpar</button>
+    
+                        <h3 id="titulo34">Resultado: </h3>
+                        <p class="resultado" id="exercicio34_resultado"></p>
+                       
+                    </div>
+                </li>
+
+                <!-- Exercicio 35 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 35 - Fibonacci</span>
+                    </div>
+                    <div class="a">
+                        <p>Escreva um programa que apresente a série de Fibonacci até o décimo quinto termo. A série de Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ..., etc. Esta série se caracteriza pela soma de um termo atual com o seu anterior subseqüente, para que seja formado o próximo valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc.</p>
+                        <h3 id="titulo35_2">Clique para Calcular</h3>
+                        <button id="exercicio35Botao" class="exerciciosBotoes" onclick="receberDados35()">Calcular</button>
+                        <button id="exercicio35Botao2" class="exerciciosBotoes" onclick="limparDados35()">Limpar</button>
+    
+                        <h3 id="titulo35">Resultado: </h3>
+                        <p class="resultado" id="exercicio35_resultado">A sequência de Fibonacci é: </p>
+                       
+                    </div>
+                </li>
+                
+                <!-- Exercicio 36 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 36 - Conversão de 10 em 10</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de 10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius. O programa deve apresentar os valores das duas temperaturas. A fórmula de conversão é 9C + 160/5 = F , sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.</p>
+
+
+
+                        <button id="exercicio36Botao" class="exerciciosBotoes" onclick="receberDados36()">Calcular</button>
+                        <button id="exercicio36Botao2" class="exerciciosBotoes" onclick="limparDados36()">Limpar</button>
+    
+                        <h3 id="titulo36">Resultado: </h3>
+                        <p class="resultado" id="exercicio36_resultado">A conversão fica: </p><br>
+                        <p class="resultado" id="exercicio36_resultado2"></p>
+                       
+                    </div>
+                </li>
+
+                <!-- Exercicio 37 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 37 - Somatória + Média de 5 valores</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura de 5 valores numéricos e apresente no final o total do somatório e a média aritmética dos valores lidos.</p>
+
+                        <h3>Digite o 1° valor</h3>
+                        <input type="text" name="exercicio37" id="exercicio37_valor1" onkeyup="limparDados37()">
+                        <h3>Digite o 2° valor</h3>
+                        <input type="text" name="exercicio37" id="exercicio37_valor2" onkeyup="limparDados37()">
+                        <h3>Digite o 3° valor</h3>
+                        <input type="text" name="exercicio37" id="exercicio37_valor3" onkeyup="limparDados37()">
+                        <h3>Digite o 4° valor</h3>
+                        <input type="text" name="exercicio37" id="exercicio37_valor4" onkeyup="limparDados37()">
+                        <h3>Digite o 5° valor</h3>
+                        <input type="text" name="exercicio37" id="exercicio37_valor5" onkeyup="limparDados37()">
+
+                        <button id="exercicio37Botao" class="exerciciosBotoes" onclick="receberDados37()">Calcular</button>
+                        <button id="exercicio37Botao2" class="exerciciosBotoes" onclick="limparTudo37()">Limpar</button>
+    
+                        <h3 id="titulo37">Resultado: </h3>
+                        <p class="resultado" id="exercicio37_resultado"></p>
+                       
+                    </div>
+                </li>
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 38 - Pares de 50 a 70</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente os resultados da soma e da média aritmética dos valores pares situados na faixa numérica de 50 a 70.</p>
+
+                        <h3>Clique para Calcular</h3>
+                        <button id="exercicio38Botao" class="exerciciosBotoes" onclick="receberDados38()">Calcular</button>
+    
+                        <h3 id="titulo38">Resultado: </h3>
+                        <p class="resultado" id="exercicio38_resultado"></p>
+                       
+                    </div>
+                </li>
+
+                <!-- Exercicio 39 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 39 - Área total da casa</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que possibilite calcular a área total de uma residência (sala, cozinha, banheiro,quartos, área de serviço, quintal, garagem, etc.). O programa deve solicitar a entrada do nome, a largura e o comprimento de um determinado cômodo. Em seguida, deve apresentar a área do cômodo lido e também uma mensagem solicitando do usuário a confirmação de continuar calculando novos cômodos. Caso o usuário responda “NAO”, o programa deve apresentar o valor total acumulado da área residencial.</p>
+
+                        <h3>Nome do cômodo:</h3>
+                        <input type="text" name="exercicio39" id="exercicio39Nome">
+
+                        <h3>Largura: </h3>
+                        <input type="number" name="exercicio39" id="exercicio39Largura">
+
+                        <h3>Comprimento</h3>
+                        <input type="number" name="exercicio39" id="exercicio39Comprimento">
+                        <br>
+                        <button class="exerciciosBotoes" onclick="adicionarComodo39()">Adicionar</button>
+                        
+                        <button class="exerciciosBotoes" onclick="calcularAreaTotal39()">Calcular Área Total</button>
+                       
+                        <button class="exerciciosBotoes" onclick="limparTudo39()">Limpar</button>
+    
+                        <h3 id="titulo39">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio39_comodo"></p>
+                        <h3 id="titulo39_2">Área total da casa:</h3>
+                        <p class="resultado" id="exercicio39_resultado"></p>
+                       
+                    </div>
+                </li>
+
+                <!-- Exercicio 40 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 40 - Valores positivos</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura de valores positivos inteiros até que um valor negativo seja informado. Ao final devem ser apresentados o maior e o menor valores informados pelo usuário.</p>
+
+                        <h3>Digite o Número: </h3>
+                        <input type="number" name="exercicio40" id="exercicio40Numero">
+                        <br>
+                        <button class="exerciciosBotoes" onclick="adicionarNumero40()">Adicionar</button>
+                       
+                        <button class="exerciciosBotoes" onclick="limparTudo40()">Limpar</button>
+    
+                        <h3 id="titulo40">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio40_resultado"></p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 41 -->
+                
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 41 - Potências dos números entre 15 e 30 (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar os quadrados dos números inteiros de 15 a 30.</p>
+
+                        <h3 id="titulo41_2">Clique para calcular</h3>
+                        <button class="exerciciosBotoes" onclick="calcular41()" id="calcular41">Calcular</button>
+
+                        <button id="limpar41" class="exerciciosBotoes" onclick="limpar41()">Limpar</button>
+    
+                        <h3 id="titulo41">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio41_resultado"></p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 42 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 42 - Somatório dos números pares de 1 a 500 (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente no final o somatório dos valores pares existentes na faixa de 1 até 500.</p>
+
+                        <h3 id="titulo42_2">Clique para calcular: </h3>
+                        <button class="exerciciosBotoes" onclick="calcular42()" id="calcular42">Calcular</button>
+
+                        <button id="limpar42" class="exerciciosBotoes" onclick="limpar42()">Limpar</button>
+    
+                        <h3 id="titulo42">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio42_resultado"></p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 43 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 43 - Números divisíveis por 4 (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar todos os números divisíveis por 4 que sejam menores que 200. Para verificar se o número é divisível por 4, efetuar dentro da malha a verificação lógica desta condição com a instrução se, perguntando se o número é divisível; sendo, mostre-o; não sendo, passe para o próximo passo. A variável que controlará o contador deve ser iniciada com o valor 1</p>
+
+                        <h3 id="titulo43_2">Clique para calcular: </h3>
+                        <button class="exerciciosBotoes" onclick="calcular43()" id="calcular43">Calcular</button>
+
+                        <button id="limpar43" class="exerciciosBotoes" onclick="limpar43()">Limpar</button>
+    
+                        <h3 id="titulo43">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio43_resultado">Os números divisíveis por 4 são: <p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 44 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 44 - Grãos de Trigo (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue o cálculo e no final apresente o somatório do número de grãos de trigo que se pode obter num tabuleiro de xadrez, obedecendo à seguinte regra: colocar um grão de trigo no primeiro quadro e nos quadros seguintes o dobro do quadro anterior. Ou seja, no primeiro quadro coloca-se 1 grão, no segundo quadro colocam-se 2 grãos (neste momento têm-se 3 grãos), no terceiro quadro colocam-se 4 grãos (tendo neste momento 7 grãos), no quarto colocam-se 8 grãos (tendo-se então 15 grãos) até atingir o sexagésimo quarto (64o) quadro. Utilize variáveis do tipo real como acumuladores.</p>
+
+                        <h3 id="titulo44_2">Clique para calcular: </h3>
+                        <button class="exerciciosBotoes" onclick="calcular44()" id="calcular44">Calcular</button>
+
+                        <button id="limpar44" class="exerciciosBotoes" onclick="limpar44()">Limpar</button>
+    
+                        <h3 id="titulo44">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio44_resultado"><p>                     
+                    </div>
+                </li>
+                
+                <!-- Exercicio 45 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 45 - Fatorial (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura de 15 valores numéricos inteiros e no final apresente o total do somatório da fatorial de cada valor lido.</p>
+
+                        <input type="number" name="exercicio45" id="valor45">
+
+                        <button class="exerciciosBotoes" onclick="adicionar45()" id="adicionar45">Adicionar</button>
+
+                        <button class="exerciciosBotoes" onclick="calcular45()" id="calcular45">Calcular</button>
+
+                        <button id="limpar45" class="exerciciosBotoes" onclick="limpar45()">Limpar</button>
+    
+                        <h3 id="titulo45">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio45_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 46 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 46 - Leitura de Valores (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura sucessiva de valores numéricos e apresente no final o total do somatório, a média aritmética e o total de valores lidos. O programa deve fazer as leituras dos valores enquanto o usuário estiver fornecendo valores positivos. Ou seja, o programa deve parar quando o usuário fornecer um valor negativo.</p>
+
+                        <input type="number" name="exercicio46" id="valor46">
+
+                        <button class="exerciciosBotoes" onclick="adicionar46()" id="adicionar46">Adicionar</button>
+
+                        <button class="exerciciosBotoes" onclick="calcular46()" id="calcular46">Calcular</button>
+
+                        <button id="limpar46" class="exerciciosBotoes" onclick="limpar46()">Limpar</button>
+    
+                        <h3 id="titulo46">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio46_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 47 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 47 - Fatorial Ímpar (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente como resultado o valor do fatorial dos valores ímpares situados na faixa numérica de 1 a 10.</p>
+
+
+                        <button class="exerciciosBotoes" onclick="calcular47()" id="calcular47">Calcular</button>
+
+                        <button id="limpar47" class="exerciciosBotoes" onclick="limpar47()">Limpar</button>
+    
+                        <h3 id="titulo47">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio47_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 48 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 48 - Área total da casa (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que possibilite calcular a área total de uma residência (sala, cozinha, banheiro,quartos, área de serviço, quintal, garagem, etc.). O programa deve solicitar a entrada do nome, a largura e o comprimento de um determinado cômodo. Em seguida, deve apresentar a área do cômodo lido e também uma mensagem solicitando do usuário a confirmação de continuar calculando novos cômodos. Caso o usuário responda “NAO”, o programa deve apresentar o valor total acumulado da área residencial.</p>
+
+                        <h3>Nome do cômodo:</h3>
+                        <input type="text" name="exercicio48" id="exercicio48Nome">
+
+                        <h3>Largura: </h3>
+                        <input type="number" name="exercicio48" id="exercicio48Largura">
+
+                        <h3>Comprimento</h3>
+                        <input type="number" name="exercicio48" id="exercicio48Comprimento">
+                        <br>
+                        <button class="exerciciosBotoes" onclick="adicionarComodo48()">Adicionar</button>
+                        
+                        <button class="exerciciosBotoes" onclick="calcularAreaTotal48()">Calcular Área Total</button>
+                       
+                        <button class="exerciciosBotoes" onclick="limparTudo48()">Limpar</button>
+    
+                        <h3 id="titulo48">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio48_comodo"></p>
+                        <h3 id="titulo48_2">Área total da casa:</h3>
+                        <p class="resultado" id="exercicio48_resultado"></p>
+                       
+                    </div>
+                </li>
+
+                <!-- Exercicio 49 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 49 - Valores Positivos (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que efetue a leitura de valores positivos inteiros até que um valor negativo seja informado. Ao final devem ser apresentados o maior e o menor valores informados pelo usuário.</p>
+
+                        <input type="number" name="exercicio49" id="exercicio49Numero">
+                        <button class="exerciciosBotoes" onclick="adicionar49()" id="adicionar49">Adicionar</button>
+
+                        <button id="limpar49" class="exerciciosBotoes" onclick="limpar49()">Limpar</button>
+    
+                        <h3 id="titulo49">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio49_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 50 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 50 - Divisão inteira (Do While)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente o resultado inteiro da divisão de dois números quaisquer. Para a elaboração do programa, não utilizar em hipótese alguma o conceito do operador aritmético DIV. A solução deve ser alcançada com a utilização de looping. Ou seja, o programa deve apresentar como resultado (quociente) quantas vezes o divisor cabe no dividendo.</p>
+
+                        <h3>Dividendo: </h3>
+                        <input type="number" name="exercicio50" id="dividendo50">
+
+                        <h3>Divisor: </h3>
+                        <input type="number" name="exercicio50" id="divisor50">
+                        <button class="exerciciosBotoes" onclick="calcular50()" id="adicionar50">Calcular</button>
+
+                        <button id="limpar50" class="exerciciosBotoes" onclick="limpar50()">Limpar</button>
+    
+                        <h3 id="titulo50">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio50_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 51 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 51 - Potência dos números de 15 a 30 (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar os quadrados dos números inteiros de 15 a 30</p>
+
+                        <h3 id="titulo51_2">Clique para calcular </h3>
+                        <button class="exerciciosBotoes" onclick="calcular51()" id="calcular51">Calcular</button>
+
+                        <button id="limpar51" class="exerciciosBotoes" onclick="limpar51()">Limpar</button>
+    
+                        <h3 id="titulo51">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio51_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 52 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 52 - Tabuada de 1 a 10 (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar os resultados de uma tabuada de multiplicar (de 1 até 10) de um número qualquer.</p>
+                        
+                        <h3>Digite um número e clique em calcular</h3>
+                        <input type="text" name="exercicio52" id="valor52">
+                        
+                        <button class="exerciciosBotoes" onclick="calcular52()" id="calcular52">Calcular</button>
+
+                        <button id="limpar52" class="exerciciosBotoes" onclick="limpar52()">Limpar</button>
+    
+                        <h3 id="titulo52">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio52_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 53 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 53 - Soma de 1 a 100 (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar o total da soma obtida dos cem primeiros números inteiros (1+2+3+4+...+98+99+100).</p>
+                        
+                        <h3>Clique para calcular ou limpar</h3>
+                        <button class="exerciciosBotoes" onclick="calcular53()" id="calcular53">Calcular</button>
+
+                        <button id="limpar53" class="exerciciosBotoes" onclick="limpar53()">Limpar</button>
+    
+                        <h3 id="titulo53">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio53_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 54 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 54 - Soma dos pares de 1 a 500 (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente no final o somatório dos valores pares existentes na faixa de 1 até 500.</p>
+                        
+                        <h3>Clique para calcular ou limpar</h3>
+                        <button class="exerciciosBotoes" onclick="calcular54()" id="calcular54">Calcular</button>
+
+                        <button id="limpar54" class="exerciciosBotoes" onclick="limpar54()">Limpar</button>
+    
+                        <h3 id="titulo54">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio54_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 55 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 55 - Números ímpares de 0 a 20 (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar todos os valores numéricos inteiros ímpares situados na faixa de 0 a 20. Para verificar se o número é ímpar, efetuar dentro da malha a verificação lógica desta condição com a instrução se, perguntando se o número é ímpar; sendo, mostre-o; não sendo, passe para o próximo passo.</p>
+                        
+                        <h3>Clique para calcular ou limpar</h3>
+                        <button class="exerciciosBotoes" onclick="calcular55()" id="calcular55">Calcular</button>
+
+                        <button id="limpar55" class="exerciciosBotoes" onclick="limpar55()">Limpar</button>
+    
+                        <h3 id="titulo55">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio55_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 56 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 56 - Números divisíveis por 4 de 1 a 200 (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar todos os números divisíveis por 4 que sejam menores que 200. Para verificar se o número é divisível por 4, efetuar dentro da malha a verificação lógica desta condição com a instrução se, perguntando se o número é divisível; sendo, mostre-o; não sendo, passe para o próximo passo. A variável que controlará o contador deve ser iniciada com o valor 1.</p>
+                        
+                        <h3>Clique para calcular ou limpar</h3>
+                        <button class="exerciciosBotoes" onclick="calcular56()" id="calcular56">Calcular</button>
+
+                        <button id="limpar56" class="exerciciosBotoes" onclick="limpar56()">Limpar</button>
+    
+                        <h3 id="titulo56">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio56_resultado"><p>                     
+                    </div>
+                </li>
+                
+                <!-- Exercicio 57 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 57 - Potência de 3 (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Apresentar os resultados das potências de 3, variando do expoente 0 até o expoente 15. Deve ser considerado que qualquer número elevado a zero é 1, e elevado a 1 é ele próprio. Observe que neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^).</p>
+                        
+                        <h3>Clique para calcular ou limpar</h3>
+                        <button class="exerciciosBotoes" onclick="calcular57()" id="calcular57">Calcular</button>
+
+                        <button id="limpar57" class="exerciciosBotoes" onclick="limpar57()">Limpar</button>
+    
+                        <h3 id="titulo57">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio57_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 58 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 58 - Potência Qualquer (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente como resultado o valor de uma potência de uma base qualquer elevada a um expoente qualquer, ou seja, de BE, em que B é o valor da base e E o valor do expoente. Observe que neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^)..</p>
+                        
+                        <h3>Digite a base: </h3>
+                        <input type="number" name="exercicio58" id="base58">
+                        <h3>Digite o expoente: </h3>
+                        <input type="number" name="exercicio58" id="expoente58">
+
+                        <h3>Clique para calcular ou limpar</h3>
+                        <button class="exerciciosBotoes" onclick="calcular58()" id="calcular58">Calcular</button>
+
+                        <button id="limpar58" class="exerciciosBotoes" onclick="limpar58()">Limpar</button>
+    
+                        <h3 id="titulo58">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio58_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 59 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 59 - Fibonacci (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Escreva um programa que apresente a série de Fibonacci até o décimo quinto termo. A série de Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ..., etc. Esta série se caracteriza pela soma de um termo atual com o seu anterior subseqüente, para que seja formado o próximo valor da seqüência. Portanto começando com os números 1, 1 o próximo termo é 1+1=2, o próximo é 1+2=3, o próximo é 2+3=5, o próximo 3+5=8, etc.</p>
+
+                        <h3>Clique para calcular ou limpar</h3>
+                        <button class="exerciciosBotoes" onclick="calcular59()" id="calcular59">Calcular</button>
+
+                        <button id="limpar59" class="exerciciosBotoes" onclick="limpar59()">Limpar</button>
+    
+                        <h3 id="titulo59">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio59_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 60 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 60 - Conversor de Graus (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente os valores de conversão de graus Celsius em Fahrenheit, de 10 em 10 graus, iniciando a contagem em 10 graus Celsius e finalizando em 100 graus Celsius. O programa deve apresentar os valores das duas temperaturas. A fórmula de conversão é F = 9*C+160/5 , sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.</p>
+
+                        <h3>Clique para calcular ou limpar</h3>
+                        <button class="exerciciosBotoes" onclick="calcular60()" id="calcular60">Calcular</button>
+
+                        <button id="limpar60" class="exerciciosBotoes" onclick="limpar60()">Limpar</button>
+    
+                        <h3 id="titulo60">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio60_resultado"><p>                     
+                    </div>
+                </li>
+
+                <!-- Exercicio 61 -->
+
+                <li class="lista">
+                    <div class="q">
+                        <span class="arrow"></span>
+                        <span>Exercicio 61 - Fatorial ímpar (For)</span>
+                    </div>
+                    <div class="a">
+                        <p>Elaborar um programa que apresente como resultado o valor do fatorial dos valores ímpares situados na faixa numérica de 1 a 10.</p>
+
+                        <h3>Clique para calcular ou limpar</h3>
+                        <button class="exerciciosBotoes" onclick="calcular61()" id="calcular61">Calcular</button>
+
+                        <button id="limpar61" class="exerciciosBotoes" onclick="limpar61()">Limpar</button>
+    
+                        <h3 id="titulo61">Resultado:</h3>
+                        
+                        <p class="resultado" id="exercicio61_resultado"><p>                     
+                    </div>
+                </li>
+
+           </ul> 
+        </div>
+    </section>
+    
+
+
+
+
+
+    <script src="js/manzano.js"></script>
+</body>
+</html>

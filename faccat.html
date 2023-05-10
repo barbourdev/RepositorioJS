@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/faccat.css">
+    <title>Repositório Barbour - Faccat</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#header" class="logo">
+            <img src="img/Frame 1.png" alt="">
+        </a>
+
+        <div class="navbar">
+            <a href="index.html">voltar</a>
+            <a href="manzano.html">atividades manzano</a>
+            <a href="https://www.linkedin.com/in/felipe-barbour-0410b0268/" target="_blank" rel="noopener noreferrer">linkedin</a>
+            <a href="https://github.com/barbourdev" target="_blank" rel="noopener noreferrer">gitHub</a>
+        </div>
+    </header>
+    
+    <section class="home">
+        <h1 class="title">Exercicios da Apostila Faccat</h1>
+        <div class="listaExercicio">
+           <ul class="exercicios">
+
+            <!-- Exercicio 1: -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 1 - Graus Fahrenheit</span>
+                </div>
+                <div class="a">
+                    <p>Escreva um algoritmo para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius:</p>
+
+                    <input type="number" name="exercicio2" id="fahrenheit1">
+                    <button class="exerciciosBotoes" onclick="calcular1()" id="calcular1">Calcular</button>
+
+                    <button id="limpar1" class="exerciciosBotoes" onclick="limpar1()">Limpar</button>
+
+                    <h3 id="titulo1">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio1Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 2 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 2 - Média Ponderada</span>
+                </div>
+                <div class="a">
+                    <p>Faça um algoritmo que leia três notas de um aluno, calcule e escreva a média final deste aluno. Considerar que a média é ponderada e que o peso das notas é 2, 3 e 5. Fórmula para o cálculo da média final é:</p>
+
+                    <h3>Nota 1: </h3>
+                    <input type="number" name="ex2Nota1" id="ex2Nota1">
+                    <h3>Nota 2: </h3>
+                    <input type="number" name="ex2Nota2" id="ex2Nota2">
+                    <h3>Nota 3: </h3>
+                    <input type="number" name="ex2Nota3" id="ex2Nota3">
+                    <button class="exerciciosBotoes" onclick="calcular2()" id="calcular2">Calcular</button>
+
+                    <button id="limpar2" class="exerciciosBotoes" onclick="limpar2()">Limpar</button>
+
+                    <h3 id="titulo2">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio2Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 3 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 3 - Maior que 10</span>
+                </div>
+                <div class="a">
+                    <p>Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso contrário escrever NÃO É MAIOR QUE 10!</p>
+
+                    <h3>Digite um valor: </h3>
+                    <input type="number" name="ex3Valor" id="ex3Valor">
+                    <button class="exerciciosBotoes" onclick="calcular3()" id="calcular3">Calcular</button>
+
+                    <button id="limpar3" class="exerciciosBotoes" onclick="limpar3()">Limpar</button>
+
+                    <h3 id="titulo3">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio3Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 4 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 4 - Positivo ou Negativo?</span>
+                </div>
+                <div class="a">
+                    <p>Ler um valor e escrever a mensagem É MAIOR QUE 10! se o valor lido for maior que 10, caso contrário escrever NÃO É MAIOR QUE 10!</p>
+
+                    <h3>Digite um valor: </h3>
+                    <input type="number" name="ex4Valor" id="ex4Valor">
+                    <button class="exerciciosBotoes" onclick="calcular4()" id="calcular4">Calcular</button>
+
+                    <button id="limpar4" class="exerciciosBotoes" onclick="limpar4()">Limpar</button>
+
+                    <h3 id="titulo4">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio4Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 5 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 5 - Maçãs</span>
+                </div>
+                <div class="a">
+                    <p>As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e escreva o custo total da compra.</p>
+
+                    <h3>Digite a quantidade de maçãs compradas: </h3>
+                    <input type="number" name="ex5Macas" id="ex5Macas">
+                    <button class="exerciciosBotoes" onclick="calcular5()" id="calcular5">Calcular</button>
+
+                    <button id="limpar5" class="exerciciosBotoes" onclick="limpar5()">Limpar</button>
+
+                    <h3 id="titulo5">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio5Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 6 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 6 - Média Aritmética</span>
+                </div>
+                <div class="a">
+                    <p>Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o aluno é aprovado). Escrever também a média calculada.</p>
+
+                    <h3>Digite a 1° Nota: </h3>
+                    <input type="number" name="ex6Nota1" id="ex6Nota1">
+
+                    <h3>Digite a 2° Nota: </h3>
+                    <input type="number" name="ex6Nota2" id="ex6Nota2">
+                    <button class="exerciciosBotoes" onclick="calcular6()" id="calcular6">Calcular</button>
+
+                    <button id="limpar6" class="exerciciosBotoes" onclick="limpar6()">Limpar</button>
+
+                    <h3 id="titulo6">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio6Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 7 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 7 - Pode votar?</span>
+                </div>
+                <div class="a">
+                    <p>Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu).</p>
+
+                    <h3>Digite o ano atual: </h3>
+                    <input type="number" name="ex7Ano" id="ex7Ano">
+
+                    <h3>Digite o ano em que nasceu: </h3>
+                    <input type="number" name="ex7Nascimento" id="ex7Nascimento">
+                    <button class="exerciciosBotoes" onclick="calcular7()" id="calcular7">Calcular</button>
+
+                    <button id="limpar7" class="exerciciosBotoes" onclick="limpar7()">Limpar</button>
+
+                    <h3 id="titulo7">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio7Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 8 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 8 - Maior valor</span>
+                </div>
+                <div class="a">
+                    <p>Ler dois valores (considere que não serão lidos valores iguais) e escrever o maior deles.</p>
+
+                    <h3>Digite o  1° valor: </h3>
+                    <input type="number" name="ex8Valor1" id="ex8Valor1">
+
+                    <h3>Digite o 2° valor:  </h3>
+                    <input type="number" name="ex8Valor2" id="ex8Valor2">
+                    <button class="exerciciosBotoes" onclick="calcular8()" id="calcular8">Calcular</button>
+
+                    <button id="limpar8" class="exerciciosBotoes" onclick="limpar8()">Limpar</button>
+
+                    <h3 id="titulo8">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio8Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 9 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 9 - Ordem Crescente</span>
+                </div>
+                <div class="a">
+                    <p>Ler dois valores (considere que não serão lidos valores iguais) e escrevê-los em ordem crescente.</p>
+
+                    <h3>Digite o  1° valor: </h3>
+                    <input type="number" name="ex9Valor1" id="ex9Valor1">
+
+                    <h3>Digite o 2° valor:  </h3>
+                    <input type="number" name="ex9Valor2" id="ex9Valor2">
+                    <button class="exerciciosBotoes" onclick="calcular9()" id="calcular9">Calcular</button>
+
+                    <button id="limpar9" class="exerciciosBotoes" onclick="limpar9()">Limpar</button>
+
+                    <h3 id="titulo9">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio9Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 10 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 10 - Xadrez</span>
+                </div>
+                <div class="a">
+                    <p>Ler a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os minutos) e calcule a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.</p>
+
+                    <h3>Digite a hora de inicio: </h3>
+                    <input type="number" name="ex10Inicio" id="ex10Inicio">
+
+                    <h3>Digite a hora de término:  </h3>
+                    <input type="number" name="ex10Termino" id="ex10Termino">
+                    <button class="exerciciosBotoes" onclick="calcular10()" id="calcular10">Calcular</button>
+
+                    <button id="limpar10" class="exerciciosBotoes" onclick="limpar10()">Limpar</button>
+
+                    <h3 id="titulo10">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio10Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 11 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 11 - Jornada de Trabalho</span>
+                </div>
+                <div class="a">
+                    <p>A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%. Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas).</p>
+
+                    <h3>Quantas horas trabalhadas? </h3>
+                    <input type="number" name="ex11Horas" id="ex11Horas">
+
+                    <h3>Qual o salário por hora? </h3>
+                    <input type="number" name="ex11Salario" id="ex11Salario">
+                    <button class="exerciciosBotoes" onclick="calcular11()" id="calcular11">Calcular</button>
+
+                    <button id="limpar11" class="exerciciosBotoes" onclick="limpar11()">Limpar</button>
+
+                    <h3 id="titulo11">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio11Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 12 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 12 - Peso Ideal </span>
+                </div>
+                <div class="a">
+                    <p>Tendo como dados de entrada o nome, a altura e o sexo (M ou F) de uma pessoa, calcule e mostre seu peso ideal</p>
+
+                    <h3>Qual seu sexo? (M/F)</h3>
+                    <input type="text" name="ex12Sexo" id="ex12Sexo">
+
+                    <h3>Qual sua altura? </h3>
+                    <input type="number" name="ex12Altura" id="ex12Altura">
+                    <button class="exerciciosBotoes" onclick="calcular12()" id="calcular12">Calcular</button>
+
+                    <button id="limpar12" class="exerciciosBotoes" onclick="limpar12()">Limpar</button>
+
+                    <h3 id="titulo12">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio12Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 13 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 13 - Comissão </span>
+                </div>
+                <div class="a">
+                    <p>Ler o salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que ele recebe uma comissão de 3% sobre o total das vendas até R$ 1.500,00 mais 5% sobre o que ultrapassar este valor, calcular e escrever o seu salário total.</p>
+
+                    <h3>Qual seu salário fixo? </h3>
+                    <input type="number" name="ex13Salario" id="ex13Salario">
+
+                    <h3>Qual foi o total em R$, que você vendeu? </h3>
+                    <input type="number" name="ex13Valor" id="ex13Valor">
+                    <button class="exerciciosBotoes" onclick="calcular13()" id="calcular13">Calcular</button>
+
+                    <button id="limpar13" class="exerciciosBotoes" onclick="limpar13()">Limpar</button>
+
+                    <h3 id="titulo13">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio13Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 14 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 14 - Saldo da conta </span>
+                </div>
+                <div class="a">
+                    <p>Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'.</p>
+
+                    <h3>Qual seu saldo? </h3>
+                    <input type="number" name="ex14Saldo" id="ex14Saldo">
+
+                    <h3>Quanto de débito? </h3>
+                    <input type="number" name="ex14Debito" id="ex14Debito">
+
+                    <h3>Quanto de crédito? </h3>
+                    <input type="number" name="ex14Credito" id="ex14Credito">
+
+                    <button class="exerciciosBotoes" onclick="calcular14()" id="calcular14">Calcular</button>
+
+                    <button id="limpar14" class="exerciciosBotoes" onclick="limpar14()">Limpar</button>
+
+                    <h3 id="titulo14">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio14Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 15 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 15 - Estoque</span>
+                </div>
+                <div class="a">
+                    <p>Faça um algoritmo para ler: quantidade atual em estoque, quantidade máxima em estoque e quantidade mínima em estoque de um produto. Calcular e escrever a quantidade média ((quantidade média = quantidade máxima + quantidade mínima)/2). Se a quantidade em estoque for maior ou igual a quantidade média escrever a mensagem 'Não efetuar compra', senão escrever a mensagem 'Efetuar compra'.</p>
+
+                    <h3>Qual o estoque atual? </h3>
+                    <input type="number" name="ex15Estoque" id="ex15Estoque">
+
+                    <h3>Qual o estoque máximo? </h3>
+                    <input type="number" name="ex15Maximo" id="ex15Maximo">
+
+                    <h3>Qual o minimo? </h3>
+                    <input type="number" name="ex15Minimo" id="ex15Minimo">
+
+                    <button class="exerciciosBotoes" onclick="calcular15()" id="calcular15">Calcular</button>
+
+                    <button id="limpar15" class="exerciciosBotoes" onclick="limpar15()">Limpar</button>
+
+                    <h3 id="titulo15">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio15Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 16 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 16 - Positivo, Negativo ou Nulo</span>
+                </div>
+                <div class="a">
+                    <p>Ler um valor e escrever se é positivo, negativo ou zero.</p>
+
+                    <h3>Digite um número: </h3>
+                    <input type="number" name="ex16Numero" id="ex16Numero">
+
+                    <button class="exerciciosBotoes" onclick="calcular16()" id="calcular16">Calcular</button>
+
+                    <button id="limpar16" class="exerciciosBotoes" onclick="limpar16()">Limpar</button>
+
+                    <h3 id="titulo16">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio16Resultado"><p>                     
+                </div>
+            </li>
+
+             <!-- Exercicio 17 -->
+
+             <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 17 - Três Valores - Maior</span>
+                </div>
+                <div class="a">
+                    <p>Ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.</p>
+
+                    <h3>Digite o 1° número: </h3>
+                    <input type="number" name="ex17Numero1" id="ex17Numero1">
+
+                    <h3>Digite o 2° número: </h3>
+                    <input type="number" name="ex17Numero2" id="ex17Numero2">
+
+                    <h3>Digite o 3° número: </h3>
+                    <input type="number" name="ex17Numero3" id="ex17Numero3">
+
+                    <button class="exerciciosBotoes" onclick="calcular17()" id="calcular17">Calcular</button>
+
+                    <button id="limpar17" class="exerciciosBotoes" onclick="limpar17()">Limpar</button>
+
+                    <h3 id="titulo17">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio17Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 18 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 18 - Soma dos Maiores</span>
+                </div>
+                <div class="a">
+                    <p>Ler 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.</p>
+
+                    <h3>Digite o 1° número: </h3>
+                    <input type="number" name="ex18Numero1" id="ex18Numero1">
+
+                    <h3>Digite o 2° número: </h3>
+                    <input type="number" name="ex18Numero2" id="ex18Numero2">
+
+                    <h3>Digite o 3° número: </h3>
+                    <input type="number" name="ex18Numero3" id="ex18Numero3">
+
+                    <button class="exerciciosBotoes" onclick="calcular18()" id="calcular18">Calcular</button>
+
+                    <button id="limpar18" class="exerciciosBotoes" onclick="limpar18()">Limpar</button>
+
+                    <h3 id="titulo18">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio18Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 19 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 19 - Ordem Crescente</span>
+                </div>
+                <div class="a">
+                    <p>Ler 3 valores (considere que não serão informados valores iguais) e escrevê-los em ordem crescente.</p>
+
+                    <h3>Digite o 1° número: </h3>
+                    <input type="number" name="ex19Numero1" id="ex19Numero1">
+
+                    <h3>Digite o 2° número: </h3>
+                    <input type="number" name="ex19Numero2" id="ex19Numero2">
+
+                    <h3>Digite o 3° número: </h3>
+                    <input type="number" name="ex19Numero3" id="ex19Numero3">
+
+                    <button class="exerciciosBotoes" onclick="calcular19()" id="calcular19">Calcular</button>
+
+                    <button id="limpar19" class="exerciciosBotoes" onclick="limpar19()">Limpar</button>
+
+                    <h3 id="titulo19">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio19Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 20 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 20 - Triângulo</span>
+                </div>
+                <div class="a">
+                    <p>Ler 3 valores (A, B e C) representando as medidas dos lados de um triângulo e escrever se formam ou não um triângulo. OBS: para formar um triângulo, o valor de cada lado deve ser menor que a soma dos outros 2 lados.</p>
+
+                    <h3>Digite o 1° valor: </h3>
+                    <input type="number" name="ex20Valor1" id="ex20Valor1">
+
+                    <h3>Digite o 2° valor </h3>
+                    <input type="number" name="ex20Valor2" id="ex20Valor2">
+
+                    <h3>Digite o 3°valor: </h3>
+                    <input type="number" name="ex20Valor3" id="ex20Valor3">
+
+                    <button class="exerciciosBotoes" onclick="calcular20()" id="calcular20">Calcular</button>
+
+                    <button id="limpar20" class="exerciciosBotoes" onclick="limpar20()">Limpar</button>
+
+                    <h3 id="titulo20">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio20Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 21 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 21 - Futebol</span>
+                </div>
+                <div class="a">
+                    <p>Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.</p>
+
+                    <h3>Digite o 1° time: </h3>
+                    <input type="text" name="ex20Time1" id="ex20Time1">
+
+                    <h3>Digite o 2° time: </h3>
+                    <input type="text" name="ex20Time2" id="ex20Time2">
+
+                    <h3>Digite os gols do 1° time: </h3>
+                    <input type="number" name="ex20Gols1" id="ex20Gols1">
+
+                    <h3>Digite os gols 2° time: </h3>
+                    <input type="number" name="ex20Gols2" id="ex20Gols2">
+
+                    
+
+                    <button class="exerciciosBotoes" onclick="calcular21()" id="calcular21">Calcular</button>
+
+                    <button id="limpar21" class="exerciciosBotoes" onclick="limpar21()">Limpar</button>
+
+                    <h3 id="titulo21">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio21Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 22 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 22 - Números</span>
+                </div>
+                <div class="a">
+                    <p>Ler dois valores e imprimir uma das três mensagens a seguir: Números iguais, caso os números sejam iguais; Primeiro é maior, caso o primeiro seja maior que o segundo;Segundo maior, caso o segundo seja maior que o primeiro.</p>
+
+                    <h3>Digite o 1° valor: </h3>
+                    <input type="number" name="ex22Valor1" id="ex22Valor1">
+
+                    <h3>Digite o 2° valor: </h3>
+                    <input type="number" name="ex22Valor2" id="ex22Valor2">
+
+                    <button class="exerciciosBotoes" onclick="calcular22()" id="calcular22">Calcular</button>
+
+                    <button id="limpar22" class="exerciciosBotoes" onclick="limpar22()">Limpar</button>
+
+                    <h3 id="titulo22">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio22Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 23 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 23 - Posto de Gasolina</span>
+                </div>
+                <div class="a">
+                    <p>Um posto está vendendo combustíveis com a seguinte tabela de descontos: Álcool: até 20 litros desconto de 3% por litro | acima de 20 litros, desocnto de 5% por litro; Gasolina: até 20 litros 4% de desconto por litro | acima de 20 litros, desconto de 6% por litro. Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90.</p>
+
+                    <h3>Quantos litros foram vendidos? </h3>
+                    <input type="number" name="ex23Litros" id="ex23Litros">
+
+                    <h3>Qual o tipo do combustível? (A- Alcool | G- Gasolina)</h3>
+                    <input type="text" name="ex23Combustivel" id="ex23Combustivel">
+
+                    <button class="exerciciosBotoes" onclick="calcular23()" id="calcular23">Calcular</button>
+
+                    <button id="limpar23" class="exerciciosBotoes" onclick="limpar23()">Limpar</button>
+
+                    <h3 id="titulo23">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio23Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 24 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 24 - Idade das Pessoas</span>
+                </div>
+                <div class="a">
+                    <p>Escreva um algoritmo que leia as idades de 2 homens e de 2 mulheres (considere que as idades dos homens serão sempre diferentes entre si, bem como as das mulheres). Calcule e escreva a soma das idades do homem mais velho com a mulher mais nova, e o produto das idades do homem mais novo com a mulher mais velha.</p>
+
+                    <h3>Idade do 1° Homem: </h3>
+                    <input type="number" name="ex24IdadeHomem1" id="ex24IdadeHomem1">
+
+                    <h3>Idade do 2° Homem: </h3>
+                    <input type="number" name="ex24IdadeHomem2" id="ex24IdadeHomem2">
+
+                    <h3>Idade da 1° Mulher: </h3>
+                    <input type="number" name="ex24IdadeMulher1" id="ex24IdadeMulher1">
+
+                    <h3>Idade da 2° Mulher: </h3>
+                    <input type="number" name="ex24IdadeMulher2" id="ex24IdadeMulher2">
+
+                    <button class="exerciciosBotoes" onclick="calcular24()" id="calcular24">Calcular</button>
+
+                    <button id="limpar24" class="exerciciosBotoes" onclick="limpar24()">Limpar</button>
+
+                    <h3 id="titulo24">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio24Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 25 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 25 - Frutas</span>
+                </div>
+                <div class="a">
+                    <p>Um posto está vendendo combustíveis com a seguinte tabela de descontos: Álcool: até 20 litros desconto de 3% por litro | acima de 20 litros, desocnto de 5% por litro; Gasolina: até 20 litros 4% de desconto por litro | acima de 20 litros, desconto de 6% por litro. Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90.</p>
+
+                    <h3>Digite o valor em KG, compradas de morango: </h3>
+                    <input type="number" name="ex25Morango" id="ex25Morango">
+
+                    <h3>Digite o valor em KG, compradas de maçã: </h3>
+                    <input type="number" name="ex25Maca" id="ex25Maca">
+
+                    <button class="exerciciosBotoes" onclick="calcular25()" id="calcular25">Calcular</button>
+
+                    <button id="limpar25" class="exerciciosBotoes" onclick="limpar25()">Limpar</button>
+
+                    <h3 id="titulo25">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio25Resultado"><p>                     
+                </div>
+            </li>
+
+            <!-- Exercicio 26 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 26 - Login</span>
+                </div>
+                <div class="a">
+                    <p>Faça um algoritmo para ler um número que é um código de usuário. Caso este código seja diferente de um código armazenado internamente no algoritmo (igual a 1234) deve ser apresentada a mensagem Usuário inválido!. Caso o Código seja correto, deve ser lido outro valor que é a senha. Se esta senha estiver incorreta (a certa é 9999) deve ser mostrada a mensagem senha incorreta. Caso a senha esteja correta, deve ser mostrada a mensagem Acesso permitido.</p>
+
+                    <h3>Digite seu usuário: </h3>
+                    <input type="text" name="ex26Usuario" id="ex26Usuario">
+
+                    <h3>Digite sua senha: </h3>
+                    <input type="text" name="ex26Senha" id="ex26Senha">
+
+                    <button class="exerciciosBotoes" onclick="calcular26()" id="calcular26">Calcular</button>
+
+                    <button id="limpar26" class="exerciciosBotoes" onclick="limpar26()">Limpar</button>
+
+                    <h3 id="titulo26">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio26Resultado"><p>                     
+                </div>
+            </li>
+
+
+           </ul> 
+        </div>
+    </section>
+    
+    <script src="js/faccat.js"></script>
+
+</body>
+</html>
