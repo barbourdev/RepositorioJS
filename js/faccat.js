@@ -808,3 +808,35 @@ function limpar26(){
     document.getElementById('ex26Senha').value = '';
     document.getElementById('titulo26').style.display = 'none';
 }
+
+// Exercicio 27
+
+function calcular27(){
+   let preco = parseFloat(document.getElementById('ex27Preco').value),
+   produto = document.getElementById('ex27Produto').value,
+   quantidade = parseInt(document.getElementById('ex27Quantidade').value),
+   precoTotal = quantidade * preco;
+
+   if (quantidade <= 5) {
+    precoTotal = precoTotal - (precoTotal * 2)/100;
+   }
+
+   if (quantidade > 5 && quantidade <= 10) {
+    precoTotal = precoTotal - (precoTotal * 3)/100;
+   }
+
+   if (quantidade > 10) {
+    precoTotal = precoTotal - (precoTotal * 5)/100;
+   }
+
+   document.getElementById('titulo27').style.display = 'block';
+   document.getElementById('exercicio27Resultado').innerHTML = "O preço total a pagar do " + produto + " com todos os descontos, é: R$ " + precoTotal;
+}
+
+function limpar27(){
+    document.getElementById('exercicio27Resultado').innerHTML = "";
+    document.getElementById('ex27Produto').value = '';
+    document.getElementById('ex27Preco').value = '';
+    document.getElementById('ex27Quantidade').value = '';
+    document.getElementById('titulo27').style.display = 'none';
+}

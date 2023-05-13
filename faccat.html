@@ -706,6 +706,35 @@
                 </div>
             </li>
 
+            <!-- Exercicio 27 -->
+
+            <li class="lista">
+                <div class="q">
+                    <span class="arrow"></span>
+                    <span>Exercicio 27 - Preço Total</span>
+                </div>
+                <div class="a">
+                    <p>Faça um algoritmo para ler: a descrição do produto (nome), a quantidade adquirida e o preço unitário. Calcular e escrever o total (total = quantidade adquirida * preço unitário), o desconto e o total a pagar (total a pagar = total - desconto), sabendo-se que: - Se quantidade menor igual a 5 o desconto será de 2% - Se quantidade maior a 5 e quantidade menor igual a 10 o desconto será de 3% - Se quantidade maior a 10 o desconto será de 5%</p>
+
+                    <h3>Nome do produto: </h3>
+                    <input type="text" name="ex27Produto" id="ex27Produto">
+
+                    <h3>Preço unitário do produto: </h3>
+                    <input type="number" name="ex27Preco" id="ex27Preco">
+
+                    <h3>Quantos produtos comprou: </h3>
+                    <input type="number" name="ex27Quantidade" id="ex27Quantidade">
+
+                    <button class="exerciciosBotoes" onclick="calcular27()" id="calcular27">Calcular</button>
+
+                    <button id="limpar27" class="exerciciosBotoes" onclick="limpar27()">Limpar</button>
+
+                    <h3 id="titulo27">Resultado:</h3>
+                    
+                    <p class="resultado" id="exercicio27Resultado"><p>                     
+                </div>
+            </li>
+
 
            </ul> 
         </div>
