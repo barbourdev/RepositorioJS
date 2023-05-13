@@ -818,15 +818,11 @@ function calcular27(){
    precoTotal = quantidade * preco;
 
    if (quantidade <= 5) {
-    precoTotal = precoTotal - (precoTotal * 2)/100;
-   }
-
-   if (quantidade > 5 && quantidade <= 10) {
-    precoTotal = precoTotal - (precoTotal * 3)/100;
-   }
-
-   if (quantidade > 10) {
-    precoTotal = precoTotal - (precoTotal * 5)/100;
+        precoTotal = precoTotal - (precoTotal * 2)/100;
+   } else if (quantidade > 5 && quantidade <= 10) {
+        precoTotal = precoTotal - (precoTotal * 3)/100;
+   } else {
+        precoTotal = precoTotal - (precoTotal * 5)/100;
    }
 
    document.getElementById('titulo27').style.display = 'block';
