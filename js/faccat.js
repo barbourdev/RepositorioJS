@@ -836,3 +836,34 @@ function limpar27(){
     document.getElementById('ex27Quantidade').value = '';
     document.getElementById('titulo27').style.display = 'none';
 }
+
+// Exercicio 28
+
+function calcular28(){
+    let nota1 = parseFloat(document.getElementById('ex28Nota1').value),
+    nota2 = parseFloat(document.getElementById('ex28Nota2').value),
+    nota3 = parseFloat(document.getElementById('ex28Nota3').value),
+    mediaExericios = parseFloat(document.getElementById('ex28MediaExercicios').value),
+    media = (nota1 + nota2 * 2 + nota3 * 3 + mediaExericios) / 7;
+    
+    document.getElementById('titulo28').style.display = 'block';
+
+    if (media >= 9) {
+        document.getElementById('exercicio28Resultado').innerHTML = "Parabéns! Você teve um aproveitamento de conceito A, com a média: " + media.toFixed(2);
+    } else if (media >= 7.5 && media < 9) {
+        document.getElementById('exercicio28Resultado').innerHTML = "Parabéns! Você teve um aproveitamento de conceito B, com a média: " + media.toFixed(2);
+    } else if (media >= 6 && media < 7.5) {
+        document.getElementById('exercicio28Resultado').innerHTML = "Droga, vamos estudar! Você teve um aproveitamento de conceito C, com a média: " + media.toFixed(2);
+    } else {
+        document.getElementById('exercicio28Resultado').innerHTML = "Droga, vamos estudar! Você teve um aproveitamento de conceito D, com a média: " + media.toFixed(2); 
+    }
+}
+
+function limpar28(){
+    document.getElementById('exercicio28Resultado').innerHTML = "";
+    document.getElementById('ex28Nota1').value = '';
+    document.getElementById('ex28Nota2').value = '';
+    document.getElementById('ex28Nota3').value = '';
+    document.getElementById('ex28MediaExercicios').value = '';
+    document.getElementById('titulo28').style.display = 'none';
+}
