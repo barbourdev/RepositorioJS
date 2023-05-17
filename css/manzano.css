@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap');
 
 *{
     margin: 0; padding: 0;
@@ -55,6 +55,14 @@ body{
     padding: 0.7rem;
     border-radius: .4rem;
     transition: 0.4s;
+}
+
+.logo-content {
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none;
 }
 
 .home{
