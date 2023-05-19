@@ -868,3 +868,32 @@ function limpar28(){
     document.getElementById('ex28MediaExercicios').value = '';
     document.getElementById('titulo28').style.display = 'none';
 }
+
+// Exercicio 29
+
+function calcular29() {
+    let codigo = parseInt(document.getElementById('ex29Codigo').value),
+    anoNascimento = parseInt(document.getElementById('ex29Nascimneto').value),
+    entrada = parseInt(document.getElementById('ex29Entrada').value);
+
+    let anoAtual = 2023;
+    let anosTrabalhados = entrada - anoAtual;
+    let idade = anoAtual - anoNascimento;
+
+    if (idade >= 65 || anosTrabalhados >= 30 || idade >= 60 && anosTrabalhados >= 25) {
+        document.getElementById('titulo29').style.display = 'block';
+        document.getElementById('exercicio29Resultado').innerHTML = "O funcionário " + codigo + ", com " + idade + " anos PRECISA requerer a aposentadoria";
+    } else {
+        document.getElementById('titulo29').style.display = 'block';
+        document.getElementById('exercicio29Resultado').innerHTML = "O funcionário " + codigo + ", com " + idade + " anos NÃO precisa requerer a aposentadoria";
+    }
+}
+
+function limpar29(){
+    document.getElementById('titulo29').style.display = 'none';
+    document.getElementById('exercicio29Resultado').innerHTML = "";
+    document.getElementById('ex29Codigo').value = '';
+    document.getElementById('ex29Nascimneto').value = '';
+    document.getElementById('ex29Entrada').value = '';
+    document.getElementById('titulo29').style.display = 'none';
+}
